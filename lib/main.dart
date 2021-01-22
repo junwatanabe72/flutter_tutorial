@@ -1,19 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:english_words/english_words.dart';
+import 'components/stack/position.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  // debugPaintSizeEnabled = true;
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Welcome to Flutter',
-      theme: ThemeData(
-        // Add the 3 lines from here...
-        primaryColor: Colors.white,
-      ),
-      home: RandomWords(),
-    );
+        title: 'Welcome to Flutter',
+        theme: ThemeData(
+          // Add the 3 lines from here...
+          primaryColor: Colors.white,
+        ),
+        home: Scaffold(
+          appBar: AppBar(title: Text('ListView')),
+          body: Layout(),
+        ));
   }
 }
 
