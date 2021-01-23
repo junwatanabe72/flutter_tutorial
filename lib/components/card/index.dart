@@ -11,7 +11,7 @@ class Layout extends StatelessWidget {
           width: 300,
           height: 100,
           child: Text(
-            'Card',
+            'CardCard',
             style: TextStyle(fontSize: 30),
           )),
     );

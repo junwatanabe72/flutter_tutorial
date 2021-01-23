@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:english_words/english_words.dart';
-import 'components/stack/position.dart';
+import 'components/interactive/flatButton.dart';
 
 void main() {
   // debugPaintSizeEnabled = true;
@@ -18,8 +18,8 @@ class MyApp extends StatelessWidget {
           primaryColor: Colors.white,
         ),
         home: Scaffold(
-          appBar: AppBar(title: Text('ListView')),
-          body: Layout(),
+          appBar: AppBar(title: Text('List')),
+          body: Center(child: ChangeForm()),
         ));
   }
 }
