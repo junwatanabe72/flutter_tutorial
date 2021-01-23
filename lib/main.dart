@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:english_words/english_words.dart';
-import 'components/interactive/flatButton.dart';
+// import 'components/interactive/flatButton.dart';
+import "components/intro/shop.dart";
 
 void main() {
   // debugPaintSizeEnabled = true;
@@ -17,10 +18,7 @@ class MyApp extends StatelessWidget {
           // Add the 3 lines from here...
           primaryColor: Colors.white,
         ),
-        home: Scaffold(
-          appBar: AppBar(title: Text('List')),
-          body: Center(child: ChangeForm()),
-        ));
+        home: shopList);
   }
 }
 
