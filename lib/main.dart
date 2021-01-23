@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:english_words/english_words.dart';
 // import 'components/interactive/flatButton.dart';
-import "components/intro/shop.dart";
+// import "components/intro/shop.dart";
+import "components/layout/tutorial.dart";
 
 void main() {
   // debugPaintSizeEnabled = true;
@@ -12,13 +13,8 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'Welcome to Flutter',
-        theme: ThemeData(
-          // Add the 3 lines from here...
-          primaryColor: Colors.white,
-        ),
-        home: shopList);
+    final text = 'Flutter layout demo';
+    return MaterialApp(title: text, home: Contents(text));
   }
 }
 
