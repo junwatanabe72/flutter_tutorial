@@ -3,7 +3,8 @@ import 'package:flutter/rendering.dart';
 import 'package:english_words/english_words.dart';
 // import 'components/interactive/flatButton.dart';
 // import "components/intro/shop.dart";
-import "components/layout/constraint.dart";
+// import "components/layout/constraint.dart";
+import 'components/app/index.dart';
 // import "components/interactive/mix.dart";
 
 void main() {
