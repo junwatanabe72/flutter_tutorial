@@ -3,7 +3,8 @@ import 'package:flutter/rendering.dart';
 import 'package:english_words/english_words.dart';
 // import 'components/interactive/flatButton.dart';
 // import "components/intro/shop.dart";
-import "components/layout/tutorial.dart";
+import "components/layout/constraint.dart";
+// import "components/interactive/mix.dart";
 
 void main() {
   // debugPaintSizeEnabled = true;
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final text = 'Flutter layout demo';
-    return MaterialApp(title: text, home: Contents(text));
+    return MaterialApp(title: text, home: Contents());
   }
 }
 

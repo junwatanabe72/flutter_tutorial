@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import "../interactive/favorite.dart";
 
 class Contents extends StatelessWidget {
   const Contents(this.text);
@@ -34,11 +35,7 @@ class Contents extends StatelessWidget {
             ),
           ),
           /*3*/
-          Icon(
-            Icons.star,
-            color: Colors.red[500],
-          ),
-          Text('41'),
+          FavoriteWidget(),
         ],
       ),
     );
