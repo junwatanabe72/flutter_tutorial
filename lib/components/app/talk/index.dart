@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
+import 'package:new_flutter_app/pages/chat.dart';
 
 class Tile extends StatelessWidget {
   final IconData icon;
@@ -21,7 +22,14 @@ class Tile extends StatelessWidget {
           ),
           title: Text(this.username),
           subtitle: Text(this.message),
-          onTap: () => {},
+          onTap: () => {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => Chat(
+                          username: this.username,
+                        )))
+          },
         ),
       ),
       actions: <Widget>[

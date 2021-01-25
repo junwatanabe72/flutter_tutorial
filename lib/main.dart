@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:english_words/english_words.dart';
+import 'package:new_flutter_app/pages/index.dart';
 // import 'components/interactive/flatButton.dart';
 // import "components/intro/shop.dart";
 // import "components/layout/constraint.dart";
-import 'components/app/index.dart';
 // import "components/interactive/mix.dart";
 
 void main() {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final text = 'Flutter layout demo';
-    return MaterialApp(title: text, home: Contents());
+    return MaterialApp(title: text, home: RootWidget());
   }
 }
 
